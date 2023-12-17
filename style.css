@@ -1,70 +1,63 @@
 body {
     font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #fff;
     margin: 0;
     padding: 0;
-    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-header, main, footer {
+.container {
+    width: 80%;
+    max-width: 800px;
+}
+
+.header, .footer {
     text-align: center;
-    padding: 40px;
-    color: #333;
+    margin-bottom: 2em;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+
+.about, .skills {
+    width: 48%;
 }
 
 h1 {
-    color: #333;
-    margin: 0;
     font-size: 2.5em;
+    margin-bottom: 0.5em;
 }
 
-p {
-    color: #666;
-    line-height: 1.5;
+h2 {
+    font-size: 2em;
+    color: #555;
 }
 
-footer {
-    color: #999;
-    border-top: 1px solid #eee;
-    padding: 10px 0;
-}
-
-/* Add additional styling for the 'About Me' and 'Skills' sections */
-section {
-    margin-bottom: 20px;
-}
-
-section h2 {
-    color: #333;
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-
-section p, section ul {
-    text-align: left;
-    margin: 0 20% 20px 20%; /* This centers the content with some padding */
-}
-
-section ul {
-    padding: 0;
+ul {
     list-style-type: none;
+    padding: 0;
 }
 
-/* Style the list items */
-section ul li {
-    background: #f8f8f8;
-    margin-bottom: 5px;
-    padding: 10px;
+ul li {
+    background-color: #f8f8f8;
+    margin-bottom: 0.5em;
+    padding: 0.5em;
     border-radius: 5px;
 }
 
-/* Add a hover effect to list items */
-section ul li:hover {
-    background: #e8e8e8;
-}
-
-/* Responsive Design */
 @media (max-width: 768px) {
-    section p, section ul {
-        margin: 0 10% 20px 10%; /* Increase padding for smaller screens */
+    .main {
+        flex-direction: column;
+    }
+
+    .about, .skills {
+        width: 100%;
     }
 }
