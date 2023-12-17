@@ -1,38 +1,62 @@
 body {
-    font-family: Arial, sans-serif;
-    color: #333;
-    background-color: white;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    background: #f8f8f8;
 }
 
-header, main, footer {
-    text-align: center;
-    padding: 20px;
+.salon-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+}
+
+.salon-info {
+    width: 50%;
+    text-align: left;
+}
+
+.salon-image {
+    width: 40%;
+    /* This will hold the image */
 }
 
 h1 {
-    color: #444;
-}
-
-h2 {
-    color: #555;
+    color: #333;
+    font-size: 2em;
 }
 
 p {
     color: #666;
+    line-height: 1.5;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
+strong {
+    color: #333;
 }
 
-li {
-    margin-bottom: 10px;
-}
-
-footer {
-    border-top: 1px solid #eee;
+.book-now {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    cursor: pointer;
     margin-top: 20px;
+}
+
+.book-now:hover {
+    background-color: #ff4757;
+}
+
+/* Responsive image styling */
+.salon-image::before {
+    content: '';
+    display: block;
+    background: url('path_to_your_image.jpg') no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 200px; /* or your preferred size */
+    border-radius: 50%;
 }
