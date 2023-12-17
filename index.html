@@ -12,21 +12,40 @@
             background-color: #f7f7f7;
         }
         .content {
-            min-height: calc(100vh - 120px); /* Adjust based on the footer's height */
-            background-image: url('ca2.png'); /* The path to your image */
-            background-position: center top; /* Adjust the position as needed */
+            min-height: calc(100vh - 120px);
+            background-image: url('ca2.png');
+            background-position: center top;
             background-repeat: no-repeat;
             background-size: cover;
-            padding-top: 120px; /* Give some space at the top for the content */
+            padding-top: 120px;
+            box-sizing: border-box;
+            color: #333;
+            font-family: Arial, sans-serif;
+            padding: 20px;
         }
         footer {
-            height: 120px; /* Your footer's height */
+            height: 120px;
             background-color: #333;
             color: white;
             text-align: center;
-            line-height: 120px; /* This should match your footer's height for vertical centering */
+            line-height: 120px;
             width: 100%;
-            position: relative; /* Change to 'fixed' if you want it at the bottom of the viewport at all times */
+            position: relative;
+        }
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .content {
+                background-position: center center;
+                padding-top: 60px; /* Reduced padding for smaller screens */
+                min-height: calc(100vh - 60px); /* Adjust min-height for smaller footer */
+            }
+            footer {
+                height: 60px; /* Reduced height for smaller screens */
+                line-height: 60px; /* Adjust line height to match the new footer height */
+            }
+            p {
+                font-size: 0.9em; /* Smaller font size for readability on smaller screens */
+            }
         }
     </style>
 </head>
