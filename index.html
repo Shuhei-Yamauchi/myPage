@@ -29,20 +29,18 @@
         }
         .image-container {
             text-align: center; /* Center the image */
-            padding: 40px 0; /* Add some padding above and below the image */
-        }
-        .image-container img {
-            max-width: 100%; /* Ensure the image is responsive and doesn't overflow */
-            height: auto; /* Maintain aspect ratio */
+            padding: 20px; /* Add some padding */
+            margin-top: 20px; /* Add some top margin */
         }
         footer {
             background: #333;
             color: #fff;
             text-align: center;
             padding: 10px;
-            position: relative; /* Changed from fixed to relative */
+            position: fixed;
+            left: 0;
+            bottom: 0;
             width: 100%;
-            margin-top: 40px; /* Add space above the footer */
         }
     </style>
 </head>
@@ -59,7 +57,7 @@
 
     <!-- Image container -->
     <div class="image-container">
-        <img src="ca2.png" alt="Jazz Cat">
+        <img src="ca2.png" alt="Jazz Cat" style="max-width:100%;">
     </div>
 
     <footer>
