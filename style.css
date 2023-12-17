@@ -2,29 +2,19 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background: #f8f8f8;
+    background: #fff;
 }
 
-.salon-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 50px;
-}
-
-.salon-info {
-    width: 50%;
-    text-align: left;
-}
-
-.salon-image {
-    width: 40%;
-    /* This will hold the image */
+header, main, footer {
+    text-align: center;
+    padding: 40px;
+    color: #333;
 }
 
 h1 {
     color: #333;
-    font-size: 2em;
+    margin: 0;
+    font-size: 2.5em;
 }
 
 p {
@@ -32,31 +22,49 @@ p {
     line-height: 1.5;
 }
 
-strong {
+footer {
+    color: #999;
+    border-top: 1px solid #eee;
+    padding: 10px 0;
+}
+
+/* Add additional styling for the 'About Me' and 'Skills' sections */
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
     color: #333;
+    font-size: 1.5em;
+    margin-bottom: 10px;
 }
 
-.book-now {
-    background-color: #ff6b6b;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    text-transform: uppercase;
-    cursor: pointer;
-    margin-top: 20px;
+section p, section ul {
+    text-align: left;
+    margin: 0 20% 20px 20%; /* This centers the content with some padding */
 }
 
-.book-now:hover {
-    background-color: #ff4757;
+section ul {
+    padding: 0;
+    list-style-type: none;
 }
 
-/* Responsive image styling */
-.salon-image::before {
-    content: '';
-    display: block;
-    background: url('path_to_your_image.jpg') no-repeat center center;
-    background-size: cover;
-    width: 100%;
-    height: 200px; /* or your preferred size */
-    border-radius: 50%;
+/* Style the list items */
+section ul li {
+    background: #f8f8f8;
+    margin-bottom: 5px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Add a hover effect to list items */
+section ul li:hover {
+    background: #e8e8e8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    section p, section ul {
+        margin: 0 10% 20px 10%; /* Increase padding for smaller screens */
+    }
 }
