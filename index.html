@@ -5,41 +5,44 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Jazz Essence</title>
 <style>
-  body {
+  body, html {
     margin: 0;
+    padding: 0;
     font-family: Arial, sans-serif;
   }
 
   .header {
     text-align: center;
-    padding: 10px;
+    padding: 20px;
+    background-color: #f8f8f8;
   }
 
-  .content {
+  .main-content {
+    text-align: center;
     padding: 20px;
-    text-align: left;
+    position: relative; /* For footer positioning */
+    min-height: 80vh; /* Adjust based on content size */
   }
 
   .image-container {
-    width: 100%; /* Adjust width as necessary */
-    max-width: 500px; /* Adjust max width as necessary */
-    margin: 20px auto; /* Centers the container */
+    width: 100%;
+    max-width: 600px; /* Adjust as necessary */
+    margin: 20px auto;
   }
 
-  .image-box {
+  .image-container img {
     width: 100%;
-    height: 300px; /* Adjust height as necessary */
-    background-image: url('ca2.png');
-    background-size: cover;
-    background-position: center;
+    height: auto;
+    border: none; /* Removes the blue border */
   }
 
   .footer {
     text-align: center;
     padding: 10px;
+    background-color: #f8f8f8;
     position: absolute;
-    width: 100%;
     bottom: 0;
+    width: 100%;
   }
 </style>
 </head>
@@ -49,17 +52,15 @@
   <h1>The Jazz Essence</h1>
 </div>
 
-<div class="content">
-  <p>With a deep appreciation for jazz, I've created this site to share its allure...</p>
-  <!-- More content -->
-  
-  <div class="image-container">
-    <div class="image-box">
-      <!-- The image will be displayed here -->
-    </div>
-  </div>
+<div class="main-content">
+  <!-- Full text content goes here -->
+  <p>With a deep appreciation for jazz, I've created this site to share its allure. Jazz first swept me off my feet as a student and has been a constant companion ever since.</p>
+  <p>My time in Mexico was a journey of discovery into the exquisite fusion of Latin beats with jazz. The bossa nova rhythms of maestro Antonio Carlos Jobim and the clear voice of Lisa Ono epitomize the diversity and global resonance of this music for me. I'm captivated by how jazz can empathize with our emotions and transform ordinary moments into extraordinary experiences.</p>
+  <p>Here, we’ll delve into the rich world of jazz and share the intellectual joy it brings. Together, let’s find ways to seamlessly integrate the joy that music brings into our everyday lives. Jazz is a gift that invites us to rediscover the beauty in our daily existence.</p>
 
-  <!-- More content -->
+  <div class="image-container">
+    <img src="ca2.png" alt="Jazz Enthusiast's Haven">
+  </div>
 </div>
 
 <div class="footer">
