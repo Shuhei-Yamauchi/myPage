@@ -9,52 +9,59 @@
         body, html {
             margin: 0;
             padding: 0;
-            height: 100%;
             background-color: #f7f7f7;
             font-family: 'Open Sans', sans-serif;
         }
         .container {
             max-width: 960px;
             margin: auto;
-            overflow: hidden;
-            padding: 5vh 20px;
+            padding: 20px;
         }
         header {
-            color: #333;
             text-align: center;
-            margin-top: 5vh;
+            margin-top: 20px;
         }
         header h1 {
             font-weight: 700;
-            letter-spacing: 1.5px;
+            font-size: 2em; /* Larger font size for the title */
         }
-        .content {
-            background-image: url('ca2.png'); /* Replace with your uploaded image path */
-            background-position: center top;
-            background-repeat: no-repeat;
-            background-size: cover;
-            padding: 20px;
-            box-sizing: border-box;
+        .image-section {
+            text-align: center; /* Center the image */
+            margin: 20px 0;
+        }
+        .image-section img {
+            max-width: 100%; /* Make image responsive */
+            height: auto;
+        }
+        .text-section {
             color: #333;
-            text-shadow: 1px 1px 0px #fff;
         }
-        .content p {
+        .text-section p {
             font-weight: 300;
             line-height: 1.6;
-            text-align: justify;
+            text-align: left; /* Align text to the left */
+            margin-bottom: 1em;
         }
         footer {
             background-color: #333;
             color: white;
             text-align: center;
-            padding: 1em 0;
+            padding: 20px 0;
             position: relative;
-            margin-top: 5vh;
+            margin-top: 20px;
         }
-        /* Mobile responsiveness */
+        /* Responsive design */
         @media (max-width: 768px) {
-            .content {
-                background-size: auto 100%;
+            header h1 {
+                font-size: 1.5em; /* Smaller font size for smaller devices */
+            }
+        }
+        @media (max-width: 480px) {
+            .container {
+                padding: 10px;
+            }
+            header h1 {
+                font-size: 1.2em; /* Even smaller font size for very small devices */
             }
         }
     </style>
@@ -64,7 +71,10 @@
         <h1>The Jazz Essence</h1>
     </header>
     <div class="container">
-        <div class="content">
+        <div class="image-section">
+            <img src="image.png" alt="Jazz Essence" /> <!-- Replace with the actual path to your image -->
+        </div>
+        <div class="text-section">
             <p>With a deep appreciation for jazz, I’ve created this site to share its allure. Jazz first swept me off my feet as a student and has been a constant companion ever since.</p>
             <p>My time in Mexico was a journey of discovery into the exquisite fusion of Latin beats with jazz. The bossa nova rhythms of maestro Antonio Carlos Jobim and the clear voice of Lisa Ono epitomize the diversity and global resonance of this music for me. I’m captivated by how jazz can empathize with our emotions and transform ordinary moments into extraordinary experiences.</p>
             <p>Here, we’ll delve into the rich world of jazz and share the intellectual joy it brings. Together, let’s find ways to seamlessly integrate the joy that music brings into our everyday lives. Jazz is a gift that invites us to rediscover the beauty in our daily existence.</p>
