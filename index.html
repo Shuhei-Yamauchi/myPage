@@ -1,44 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jazz Enthusiast's Haven</title>
-    <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            background-color: #f7f7f7;
-        }
-        .content {
-            min-height: calc(100vh - 120px); /* Adjust based on the footer's height */
-            background-image: url('ca2.png'); /* The path to your image */
-            background-position: center top; /* Adjust the position as needed */
-            background-repeat: no-repeat;
-            background-size: cover;
-            padding-top: 120px; /* Give some space at the top for the content */
-        }
-        footer {
-            height: 120px; /* Your footer's height */
-            background-color: #333;
-            color: white;
-            text-align: center;
-            line-height: 120px; /* This should match your footer's height for vertical centering */
-            width: 100%;
-            position: relative; /* Change to 'fixed' if you want it at the bottom of the viewport at all times */
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Website Title</title>
+<style>
+  body, html {
+    height: 100%;
+    margin: 0;
+  }
+
+  .bg-image {
+    /* The image used */
+    background-image: url('ca2.png');
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* For mobile screens */
+  @media only screen and (max-width: 767px) {
+    .bg-image {
+      background-size: contain;
+    }
+  }
+</style>
 </head>
 <body>
-    <div class="content">
-        <!-- Your site content goes here -->
-        <p>With a deep appreciation for jazz, I’ve created this site to share its allure. Jazz first swept me off my feet as a student and has been a constant companion ever since.</p>
-        <p>My time in Mexico was a journey of discovery into the exquisite fusion of Latin beats with jazz. The bossa nova rhythms of maestro Antonio Carlos Jobim and the clear voice of Lisa Ono epitomize the diversity and global resonance of this music for me. I’m captivated by how jazz can empathize with our emotions and transform ordinary moments into extraordinary experiences.</p>
-        <p>Here, we’ll delve into the rich world of jazz and share the intellectual joy it brings. Together, let’s find ways to seamlessly integrate the joy that music brings into our everyday lives. Jazz is a gift that invites us to rediscover the beauty in our daily existence.</p>
-    </div>
-    <footer>
-        © 2023 Jazz Enthusiast's Haven
-    </footer>
+
+<div class="bg-image"></div>
+
 </body>
 </html>
