@@ -8,6 +8,7 @@
   body, html {
     height: 100%;
     margin: 0;
+    padding: 0;
   }
 
   .bg-image {
@@ -23,6 +24,22 @@
     background-size: cover;
   }
 
+  .content {
+    /* Positioning content */
+    position: relative;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .text-background {
+    /* Semi-transparent background for text for better readability */
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.7); /* White background with opacity */
+    color: #000; /* Change text color as needed */
+    padding: 20px;
+    border-radius: 10px; /* Optional: for rounded corners */
+  }
+
   /* For mobile screens */
   @media only screen and (max-width: 767px) {
     .bg-image {
@@ -33,7 +50,14 @@
 </head>
 <body>
 
-<div class="bg-image"></div>
+<div class="bg-image">
+  <div class="content">
+    <div class="text-background">
+      <p>With a deep appreciation for jazz, I've created this site to share its allure...</p>
+      <!-- Add more text as needed -->
+    </div>
+  </div>
+</div>
 
 </body>
 </html>
