@@ -5,48 +5,66 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Jazz Essence</title>
 <style>
-  .content-wrapper {
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .header {
     text-align: center;
+    padding: 10px;
+  }
+
+  .content {
     padding: 20px;
+    text-align: left;
   }
 
   .image-container {
-    width: 80%; /* Adjust as needed */
-    margin: 20px auto;
-    border: solid 3px blue; /* This represents the blue border */
+    width: 100%; /* Adjust width as necessary */
+    max-width: 500px; /* Adjust max width as necessary */
+    margin: 20px auto; /* Centers the container */
   }
 
-  img {
-    width: 100%; /* Make the image fill the container */
-    height: auto;
-    display: block; /* Remove any extra space below the image */
+  .image-box {
+    width: 100%;
+    height: 300px; /* Adjust height as necessary */
+    background-image: url('ca2.png');
+    background-size: cover;
+    background-position: center;
   }
 
-  .text-background {
-    background: rgba(255, 255, 255, 0.7);
-    display: inline-block;
-    margin: 0 auto;
-    padding: 20px;
-    width: 80%; /* Match the width of the image container for consistency */
+  .footer {
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
   }
 </style>
 </head>
 <body>
 
-<div class="content-wrapper">
+<div class="header">
   <h1>The Jazz Essence</h1>
-  <div class="text-background">
-    <p>With a deep appreciation for jazz, I've created this site to share its allure...</p>
-    <!-- The rest of your text goes here -->
-  </div>
-  <div class="image-container">
-    <img src="ca2.png" alt="Jazz Image">
-  </div>
 </div>
 
-<footer>
+<div class="content">
+  <p>With a deep appreciation for jazz, I've created this site to share its allure...</p>
+  <!-- More content -->
+  
+  <div class="image-container">
+    <div class="image-box">
+      <!-- The image will be displayed here -->
+    </div>
+  </div>
+
+  <!-- More content -->
+</div>
+
+<div class="footer">
   © 2023 Jazz Enthusiast's Haven
-</footer>
+</div>
 
 </body>
 </html>
