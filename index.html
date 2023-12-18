@@ -5,45 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jazz - The Sound of Life</title>
     <style>
-        /* Existing styles ... */
-        
-        /* Responsive Image */
-        .container img {
-            max-width: 100%;
-            height: auto;
-            display: block; /* Remove if you want inline */
-            margin: 0 auto; /* Center image */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+            line-height: 1.6;
         }
-        
-        /* Media Query for mobile devices */
-        @media (max-width: 768px) {
-            .container {
-                width: 95%;
-            }
-
-            header, footer {
-                text-align: center; /* Center content for mobile */
-            }
-
-            /* Add any additional styles for mobile layout */
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
         }
-        
-        /* Media Query for tablets */
-        @media (min-width: 769px) and (max-width: 1024px) {
-            .container {
-                width: 90%;
-            }
-            
-            /* Add any additional styles for tablet layout */
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
         }
-
-        /* Media Query for desktops */
-        @media (min-width: 1025px) {
-            .container {
-                width: 80%;
-            }
-            
-            /* Add any additional styles for desktop layout */
+        section {
+            padding: 20px 0;
+        }
+        .image-container img {
+            width: 100%; /* Full width */
+            height: auto; /* Maintain aspect ratio */
+            margin-top: 20px; /* Add space above the image */
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
@@ -53,9 +50,13 @@
     </header>
 
     <section class="container">
-        <!-- Text content -->
-        <img src="ca2.png" alt="Jazz Enthusiast's Haven">
-        <!-- The rest of your content -->
+        <p>With a deep appreciation for jazz, I’ve created this site to share its allure. Jazz first swept me off my feet as a student and has been a constant companion ever since.</p>
+        <p>My time in Mexico was a journey of discovery into the exquisite fusion of Latin beats with jazz. The bossa nova rhythms of maestro Antonio Carlos Jobim and the clear voice of Lisa Ono epitomize the diversity and global resonance of this music for me. I’m captivated by how jazz can empathize with our emotions and transform ordinary moments into extraordinary experiences.</p>
+        <p>Here, we’ll delve into the rich world of jazz and share the intellectual joy it brings. Together, let’s find ways to seamlessly integrate the joy that music brings into our everyday lives. Jazz is a gift that invites us to rediscover the beauty in our daily existence.</p>
+        <!-- Image container -->
+        <div class="image-container">
+            <img src="ca2.png" alt="Jazz Enthusiast's Haven">
+        </div>
     </section>
 
     <footer>
