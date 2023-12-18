@@ -3,59 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Jazz Essence</title>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Jazz - The Sound of Life</title>
     <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            background-color: #f7f7f7;
-            font-family: 'Open Sans', sans-serif;
+        /* Existing styles ... */
+        
+        /* Responsive Image */
+        .container img {
+            max-width: 100%;
+            height: auto;
+            display: block; /* Remove if you want inline */
+            margin: 0 auto; /* Center image */
         }
-        .container {
-            max-width: 960px;
-            margin: auto;
-            overflow: hidden;
-            padding: 5vh 20px;
-        }
-        header {
-            color: #333;
-            text-align: center;
-            margin-top: 5vh;
-        }
-        header h1 {
-            font-weight: 700;
-            letter-spacing: 1.5px;
-        }
-        .content {
-            background-image: url('ca2.png'); /* Replace with your uploaded image path */
-            background-position: center top;
-            background-repeat: no-repeat;
-            background-size: cover;
-            padding: 20px;
-            box-sizing: border-box;
-            color: #333;
-            text-shadow: 1px 1px 0px #fff;
-        }
-        .content p {
-            font-weight: 300;
-            line-height: 1.6;
-            text-align: justify;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1em 0;
-            position: relative;
-            margin-top: 5vh;
-        }
-        /* Mobile responsiveness */
+        
+        /* Media Query for mobile devices */
         @media (max-width: 768px) {
-            .content {
-                background-size: auto 100%;
+            .container {
+                width: 95%;
             }
+
+            header, footer {
+                text-align: center; /* Center content for mobile */
+            }
+
+            /* Add any additional styles for mobile layout */
+        }
+        
+        /* Media Query for tablets */
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .container {
+                width: 90%;
+            }
+            
+            /* Add any additional styles for tablet layout */
+        }
+
+        /* Media Query for desktops */
+        @media (min-width: 1025px) {
+            .container {
+                width: 80%;
+            }
+            
+            /* Add any additional styles for desktop layout */
         }
     </style>
 </head>
@@ -63,15 +51,15 @@
     <header>
         <h1>The Jazz Essence</h1>
     </header>
-    <div class="container">
-        <div class="content">
-            <p>With a deep appreciation for jazz, I’ve created this site to share its allure. Jazz first swept me off my feet as a student and has been a constant companion ever since.</p>
-            <p>My time in Mexico was a journey of discovery into the exquisite fusion of Latin beats with jazz. The bossa nova rhythms of maestro Antonio Carlos Jobim and the clear voice of Lisa Ono epitomize the diversity and global resonance of this music for me. I’m captivated by how jazz can empathize with our emotions and transform ordinary moments into extraordinary experiences.</p>
-            <p>Here, we’ll delve into the rich world of jazz and share the intellectual joy it brings. Together, let’s find ways to seamlessly integrate the joy that music brings into our everyday lives. Jazz is a gift that invites us to rediscover the beauty in our daily existence.</p>
-        </div>
-    </div>
+
+    <section class="container">
+        <!-- Text content -->
+        <img src="ca2.png" alt="Jazz Enthusiast's Haven">
+        <!-- The rest of your content -->
+    </section>
+
     <footer>
-        © 2023 Jazz Enthusiast's Haven
+        <p>&copy; 2023 Jazz Enthusiast's Haven</p>
     </footer>
 </body>
 </html>
